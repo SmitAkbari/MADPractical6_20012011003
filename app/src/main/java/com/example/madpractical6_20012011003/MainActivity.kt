@@ -17,8 +17,8 @@ class MainActivity : AppCompatActivity() {
         initVideoPlayer()
 
         binding.gotoYouTube.setOnClickListener{
-            intent = Intent(this,YouTubeActivity::class.java).apply {
-                startActivity(intent)
+            Intent(this,YouTubeActivity::class.java).apply {
+                startActivity(this)
             }
         }
 
